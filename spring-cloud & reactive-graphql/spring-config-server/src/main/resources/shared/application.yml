@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework.security: INFO
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.5.4:8761/eureka/
+
+management: #actuator
+  endpoints:
+    enable: true
+    web:
+      exposure:
+        include: "*"
